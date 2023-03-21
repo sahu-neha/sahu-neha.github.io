@@ -5,22 +5,507 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="Portfolio" content="Neha Sahu" />
-		<meta
-			name="description"
-			content="My name is Neha. I am an enthusiastic java backend developer."
-		/>
+
 		<link rel="stylesheet" href="styles/index.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="script/index.js"></script>
+
 		<title>Portfolio - Neha Sahu</title>
 	</head>
+
+	<!DOCTYPE html>
+
 	<body>
-		hello World! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-		Libero est veniam quod reiciendis! Ipsa sit ad cumque beatae, cupiditate
-		recusandae amet dolor nisi perspiciatis veritatis, aliquam illum alias a
-		incidunt.
+		<header>
+			<div class="grid-layout">
+				<nav id="nav-menu">
+					<img
+						src="images/logo-nehasahu.png"
+						alt="Neha Sahu"
+						width="150px"
+						height="25px"
+						onclick="window.location.href = '#home';"
+					/>
+					<div class="mobile-menu">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+					<ul class="nav-list">
+						<li class="nav-link home"><a href="#home">Home</a></li>
+						<li class="nav-link about"><a href="#about">About</a></li>
+						<li class="nav-link skills">
+							<a href="#skills">Skills</a>
+						</li>
+						<li class="nav-link projects">
+							<a href="#projects">Projects</a>
+						</li>
+						<li class="nav-link contact"><a href="#contact">Contact</a></li>
+						<li class="nav-link resume">
+							<a
+								id="resume-link-1"
+								target="_blank"
+								download=""
+								href="images/Neha-Sahu-Resume.pdf"
+								onclick="window.open(`https://drive.google.com/file/d/103Srh5vUMM8L_88SNxv5147mn_ge-_4T/view?usp=share_link`)"
+								>Resume</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section id="home">
+				<div class="grid-layout">
+					<div id="home-container-text">
+						<h1>
+							Hello, I'm <br />
+							<span id="user-detail-name">Neha Sahu</span>
+						</h1>
+						<p class="typewriter user-detail-intro">
+							JAVA BACKEND DEVELOPER
+						</p>
+
+						<!-- <p class="user-detail-intro">
+							<span class="typewriter"></span>
+						</p> -->
+
+						<a
+							id="resume-link-2"
+							target="_blank"
+							download=""
+							href="images/Neha-Sahu-Resume.pdf"
+							onclick="window.open(`https://drive.google.com/file/d/103Srh5vUMM8L_88SNxv5147mn_ge-_4T/view?usp=share_link`)"
+						>
+							Download Resume
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about section">
+				<div class="grid-layout">
+					<div>
+						<div id="home-img">
+							<img
+								src="images/profile-photo-neha-sahu.jpg"
+								alt="Neha Sahu"
+								width="300px"
+								height="300px"
+							/>
+						</div>
+						<div>
+							<h2 style="color: #fff">About <span>.</span></h2>
+							<p>
+								A passionate and adaptable back-end developer, skilled in Java,
+								MySQL, JDBC, Hybernate, Spring, JavaScript with proficiency in
+								problem-solving. A dependable and responsible team player with
+								an eye to detail. Looking for a position to enhance my skills
+								while significantly contributing to the company's growth.
+							</p>
+							<nav>
+								<ul>
+									<a
+										href="https://www.linkedin.com/in/neha-s-3925a4239/"
+										target="_blank"
+										><li>
+											<img
+												src="./images/linkedin.svg"
+												alt="LinkedIn"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+
+									<a
+										href="https://discord.com/users/589433155635773470"
+										target="_blank"
+										><li>
+											<img
+												src="./images/discord.svg"
+												alt="Discord"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+
+									<a href="https://github.com/sahu-neha" target="_blank"
+										><li>
+											<img
+												src="./images/github.svg"
+												alt="GitHub"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills-card">
+				<div class="grid-layout">
+					<article id="skills-text">
+						<h2 style="color: #fff">Skills & Tech-stack <span>.</span></h2>
+						<br />
+						<p class="skills-card-name">
+							HTML, CSS, Java, JDBC, MySQL, SpringBoot, Hybernate, JavaScript,
+							Git
+						</p>
+					</article>
+
+					<div id="skills-cards" class="skills-card">
+						<article class="html  ">
+							<img
+								class="skills-card-img"
+								src="images/html.svg"
+								width="60px"
+								height="60px"
+								alt="html"
+							/>
+						</article>
+						<article class="css  ">
+							<img
+								class="skills-card-img"
+								src="images/css.svg"
+								width="60px"
+								height="60px"
+								alt="css"
+							/>
+						</article>
+						<article class="js  ">
+							<img
+								class="skills-card-img"
+								src="images/java.svg"
+								width="60px"
+								height="60px"
+								alt="java"
+							/>
+						</article>
+						<article class="java  ">
+							<img
+								class="skills-card-img"
+								src="images/DB-JDBC.svg"
+								width="60px"
+								height="60px"
+								alt="JDBC"
+							/>
+						</article>
+						<article class="MySQL  ">
+							<img
+								class="skills-card-img"
+								src="images/mysql.svg"
+								width="60px"
+								height="60px"
+								alt="MySQL"
+							/>
+						</article>
+						<article class="SpringBoot  ">
+							<img
+								class="skills-card-img"
+								src="images/spring.svg"
+								width="60px"
+								height="60px"
+								alt="SpringBoot"
+							/>
+						</article>
+						<article class="Hybernate  ">
+							<img
+								class="skills-card-img"
+								src="images/hibernate.svg"
+								width="60px"
+								height="60px"
+								alt="Hybernate"
+							/>
+						</article>
+						<article class="Git  ">
+							<img
+								class="skills-card-img"
+								src="images/js.svg"
+								width="60px"
+								height="60px"
+								alt="JavaScript"
+							/>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="sub-skills">
+				<div class="grid-layout">
+					<div id="sub-skills-section">
+						<article class=" ">
+							<div>
+								<img
+									src="images/coding.svg"
+									width="100px"
+									height="100px"
+									alt="ícon"
+								/>
+							</div>
+							<h3>1200+ Hours of</h3>
+							<p>Coding</p>
+						</article>
+						<article class=" ">
+							<div>
+								<img
+									src="images/dsa.svg"
+									width="100px"
+									height="100px"
+									alt="ícon"
+								/>
+							</div>
+							<h3>400+ Questions of</h3>
+							<p>Data Structure & Algorithms</p>
+						</article>
+						<article class=" ">
+							<div>
+								<img
+									src="images/soft-skills.svg"
+									width="100px"
+									height="100px"
+									alt="ícon"
+								/>
+							</div>
+							<h3>100+ Hours of</h3>
+							<p>Soft skills</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="project-card">
+				<div class="grid-layout">
+					<h2>Projects <span>.</span></h2>
+					<div id="section-projects">
+						<article class="  p-cards">
+							<h3 class="project-title">Digital Bazaar</h3>
+							<br />
+							<img
+								src="images/digitalbazaar.jpg"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+
+							<p class="project-description">
+								An e-commerce store for grocery and all daily needs | Clone of
+								website JioMart | A collaborative project built by a team of 4,
+								executed in 5 days.
+								<br />
+								<b class="project-tech-stack">Tech-stack :</b> HTML, CSS,
+								JavaScript
+							</p>
+
+							<a
+								class="project-deployed-link"
+								href="https://digital-bazaar.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/material-sleep-1381"
+								target="_blank"
+								class="delayExtraBigReveal"
+							>
+								&nbsp; GitHub</a
+							>
+						</article>
+						<article class="  p-cards">
+							<h3>ManageGeeks</h3>
+							<br /><img
+								src="images/managegeeks.png"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+							<p>
+								A work management platform that helps business teams plan
+								projects, organize tasks | Clone of website Wrike | An
+								individual project, executed in 5 days.
+								<br /><b>Tech-stack :</b> HTML, CSS, JavaScript
+							</p>
+
+							<a
+								href="https://heartfelt-belekoy-7286f4.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/gleaming-cracker-3413"
+								target="_blank"
+								class="delayExtraBigReveal"
+								>&nbsp; GitHub</a
+							>
+						</article>
+					</div>
+					<div id="section-projects">
+						<article class="  p-cards">
+							<h3 class="project-title">Digital Bazaar</h3>
+							<br />
+							<img
+								src="images/digitalbazaar.jpg"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+
+							<p class="project-description">
+								An e-commerce store for grocery and all daily needs | Clone of
+								website JioMart | A collaborative project built by a team of 4,
+								executed in 5 days.
+								<br />
+								<b class="project-tech-stack">Tech-stack :</b> HTML, CSS,
+								JavaScript
+							</p>
+
+							<a
+								class="project-deployed-link"
+								href="https://digital-bazaar.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/material-sleep-1381"
+								target="_blank"
+								class="delayExtraBigReveal"
+							>
+								&nbsp; GitHub</a
+							>
+						</article>
+						<article class="  p-cards">
+							<h3>ManageGeeks</h3>
+							<br /><img
+								src="images/managegeeks.png"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+							<p>
+								A work management platform that helps business teams plan
+								projects, organize tasks | Clone of website Wrike | An
+								individual project, executed in 5 days.
+								<br /><b>Tech-stack :</b> HTML, CSS, JavaScript
+							</p>
+
+							<a
+								href="https://heartfelt-belekoy-7286f4.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/gleaming-cracker-3413"
+								target="_blank"
+								class="delayExtraBigReveal"
+								>&nbsp; GitHub</a
+							>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="github-contribution" id="github">
+				<div class="grid-layout" id="git-stats">
+					<h2>GitHub Contribution <span>.</span></h2>
+					<div id="section-github">
+						<div id="github-streak-stats">
+							<img
+								src="https://github-readme-stats.vercel.app/api?username=sahu-neha&theme=highcontrast&show_icons=true&count_private=true&hide_border=true"
+								alt="sahu-neha github-streak-stats"
+							/>
+						</div>
+						<div id="github-stats-card">
+							<img
+								src="https://github-readme-streak-stats.herokuapp.com/?user=sahu-neha&theme=highcontrast&hide_border=true"
+								alt="sahu-neha github-readme-stats"
+							/>
+						</div>
+						<div id="github-top-langs">
+							<img
+								src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahu-neha&theme=highcontrast&hide_border=true&layout=compact&langs_count=6&layout=compact"
+								alt="sahu-neha github-readme-lang-stats"
+							/>
+						</div>
+					</div>
+					<div id="section-github">
+						<div id="react-activity-calendar">
+							<img
+								src="https://ghchart.rshah.org/sahu-neha"
+								alt="sahu-neha github-streak-stats"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about">
+				<div id="contact" class="grid-layout">
+					<h2 style="text-align: center">Contact <span>.</span></h2>
+					<div>
+						<div id="contact-photo"></div>
+						<div>
+							<h3>Feel free to contact me for any work or suggestions.</h3>
+							<h3 style="color: teal"><b>Neha Sahu</b></h3>
+							<h3 id="contact-email">
+								📧
+								<span>
+									<a style="color: #fff" href="mailto:nehasahu2227@gmail.com">
+										nehasahu2227@gmail.com</a
+									></span
+								>
+							</h3>
+							<h3 id="contact-phone">+91-6260299169</h3>
+							<nav>
+								<ul>
+									<a
+										id="contact-linkedin"
+										href="https://www.linkedin.com/in/sahu-neha/"
+										target="_blank"
+										><li>
+											<img
+												src="./images/linkedin.svg"
+												alt="LinkedIn"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+
+									<a
+										id="contact-github"
+										href="https://discord.com/users/589433155635773470"
+										target="_blank"
+										><li>
+											<img
+												src="./images/discord.svg"
+												alt="Discord"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+
+									<a
+										id="contact-github"
+										href="https://github.com/sahu-neha"
+										target="_blank"
+										><li>
+											<img
+												src="./images/github.svg"
+												alt="GitHub"
+												onload="SVGInject(this)"
+											/></li
+									></a>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<p>Thank you for visiting !</p>
+			</footer>
+		</main>
 	</body>
 </html>
+<script src="script/index.js"></script>
