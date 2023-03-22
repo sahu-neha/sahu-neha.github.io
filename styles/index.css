@@ -239,7 +239,7 @@ header .grid-layout nav .nav-list li a:hover {
     display: flex;
     align-items: center;
     min-height: 90vh;
-    padding: 200px 0px;
+    padding: 150px 0px;
     overflow: hidden;
     width: 100%;
 }
@@ -251,12 +251,14 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #home .grid-layout #home-container-text {
-    width: 100%;
+    width: 50%;
     flex-direction: column;
-    /* background-image: url(); */
+    /* background-image: url(""); */
 }
 
 @media screen and (max-width: 992px) {
+
+    #home .grid-layout,
     #home .grid-layout #home-container-text {
         display: flex;
         flex-direction: column;
@@ -359,7 +361,7 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 
-#about .grid-layout>div #home-img {
+#about .grid-layout>div .home-img {
     width: 47%;
     background-image: url("assets/image/profile-photo-neha-sahu.jpg");
     background-repeat: no-repeat;
@@ -369,7 +371,7 @@ header .grid-layout nav .nav-list li a:hover {
     height: 500px;
 }
 
-#about .grid-layout>div #home-img>img {
+#about .grid-layout>div .home-img>img {
     padding: 80px;
     width: 100%;
     height: 100%;
@@ -377,39 +379,29 @@ header .grid-layout nav .nav-list li a:hover {
     border-radius: 50%;
 }
 
-#about .grid-layout>div #contact-photo {
-    width: 47%;
-    background-image: url("https://i.pinimg.com/originals/e8/72/ca/e872cad228d790ba8fb63bb40056a208.gif");
-    /* background-image: "images/contact-gif.gif"; */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    height: 300px;
-}
 
 @media screen and (max-width: 1200px) {
-    #about .grid-layout>div #home-img {
+    #about .grid-layout>div .home-img {
         width: auto;
     }
 
 }
 
 @media screen and (max-width: 992px) {
-    #about .grid-layout>div #home-img {
+    #about .grid-layout>div .home-img {
         height: 350px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    #about .grid-layout>div #home-img {
+    #about .grid-layout>div .home-img {
         height: 300px;
     }
 
 }
 
-#about .grid-layout>div #home-img h3 {
+#about .grid-layout>div .home-img h3 {
     color: #040405;
     background-color: #fff;
     padding: 8px;
@@ -507,16 +499,14 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 
-#projects .grid-layout h2,
-#about .grid-layout>h2 {
+#projects .grid-layout h2 {
     padding-bottom: 24px;
     color: #fff;
     font-size: 4rem;
     font-weight: 500;
 }
 
-#projects .grid-layout h2 span,
-#about .grid-layout h2 span {
+#projects .grid-layout h2 span {
     color: teal;
 }
 
@@ -548,7 +538,6 @@ header .grid-layout nav .nav-list li a:hover {
     border: 1px solid #040405;
     transition: 1s all ease;
     height: auto;
-
 }
 
 #projects .grid-layout #section-projects>article>img {
@@ -904,13 +893,13 @@ header .grid-layout nav .nav-list li a:hover {
 /* contact section */
 
 
-#about {
+#contact {
     padding: 72px 0px 96px 0px;
     background-color: #040405;
 }
 
 @media screen and (max-width: 1200px) {
-    #about {
+    #contact {
         padding: 72px 20px;
     }
 }
@@ -936,47 +925,32 @@ header .grid-layout nav .nav-list li a:hover {
 
 #contact .grid-layout>div #contact-photo {
     width: 47%;
-    background-image: url("https://imgur.com/irWJZL9");
+    /* background-image: url("https://i.pinimg.com/originals/e8/72/ca/e872cad228d790ba8fb63bb40056a208.gif"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 300px;
+    height: auto;
 }
 
 @media screen and (max-width: 1200px) {
-
     #contact .grid-layout>div #contact-photo {
-        width: 100%;
-        height: 400px;
+        width: auto;
     }
 }
 
 @media screen and (max-width: 992px) {
-
-    #contact .grid-layout>div #contact-photo {
-        height: 350px;
+    #contact .grid-layout>div .home-img {
+        width: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    #contact .grid-layout>div #contact-photo {
-        height: 300px;
+    #contact .grid-layout>div .home-img {
+        width: auto;
     }
 }
 
-#contact .grid-layout>div #contact-photo h3 {
-    color: #040405;
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 16px;
-    width: 180px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin: 16px;
-}
 
 #contact .grid-layout>div div:nth-child(2) {
     width: 49%;
@@ -1050,19 +1024,6 @@ header .grid-layout nav .nav-list li a:hover {
     border-color: teal;
 }
 
-#projects {
-    padding: 96px 48px;
-    text-align: center;
-    background-color: #040405;
-}
-
-@media screen and (max-width: 992px) {
-    #projects {
-        padding: 48px 24px;
-    }
-}
-
-#projects .grid-layout h2,
 #contact .grid-layout>h2 {
     padding-bottom: 24px;
     color: #fff;
@@ -1070,10 +1031,11 @@ header .grid-layout nav .nav-list li a:hover {
     font-weight: 500;
 }
 
-#projects .grid-layout h2 span,
 #contact .grid-layout h2 span {
     color: teal;
 }
+
+/* footer */
 
 footer {
     width: 100%;

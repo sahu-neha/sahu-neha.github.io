@@ -45,7 +45,7 @@
 						<li class="nav-link contact"><a href="#contact">Contact</a></li>
 						<li class="nav-link resume">
 							<a
-								id="resume-link-1"
+								id="resume-button-1"
 								target="_blank"
 								download=""
 								href="images/Neha-Sahu-Resume.pdf"
@@ -66,14 +66,16 @@
 							Hello, I'm <br />
 							<span id="user-detail-name">Neha Sahu</span>
 						</h1>
-						<p class="typewriter user-detail-intro">JAVA BACKEND DEVELOPER</p>
+						<p class="typewriter" id="user-detail-intro">
+							JAVA BACKEND DEVELOPER
+						</p>
 
-						<!-- <p class="user-detail-intro">
+						<!-- <p class=" ">
 							<span class="typewriter"></span>
 						</p> -->
 
 						<a
-							id="resume-link-2"
+							id="resume-button-2"
 							target="_blank"
 							download=""
 							href="images/Neha-Sahu-Resume.pdf"
@@ -82,13 +84,14 @@
 							Download Resume
 						</a>
 					</div>
+					<div id="home-bg-photo"><img src="images/home-bg.png" alt="" /></div>
 				</div>
 			</section>
 
 			<section id="about" class="about section">
 				<div class="grid-layout">
 					<div>
-						<div id="home-img">
+						<div class="home-img">
 							<img
 								src="images/profile-photo-neha-sahu.jpg"
 								alt="Neha Sahu"
@@ -143,7 +146,7 @@
 						</p>
 					</article>
 
-					<div id="skills-cards" class="skills-card">
+					<div id="skills-cards" class="">
 						<article class="html">
 							<img
 								class="skills-card-img"
@@ -171,15 +174,7 @@
 								alt="java"
 							/>
 						</article>
-						<article class="java">
-							<img
-								class="skills-card-img"
-								src="images/DB-JDBC.svg"
-								width="60px"
-								height="60px"
-								alt="JDBC"
-							/>
-						</article>
+
 						<article class="MySQL">
 							<img
 								class="skills-card-img"
@@ -214,6 +209,15 @@
 								width="60px"
 								height="60px"
 								alt="JavaScript"
+							/>
+						</article>
+						<article class="java">
+							<img
+								class="skills-card-img"
+								src="images/git.svg"
+								width="60px"
+								height="60px"
+								alt="git"
 							/>
 						</article>
 					</div>
@@ -295,7 +299,7 @@
 							<a
 								href="https://github.com/sahu-neha/material-sleep-1381"
 								target="_blank"
-								class="delayExtraBigReveal"
+								class="project-github-link"
 							>
 								&nbsp; GitHub</a
 							>
@@ -309,12 +313,13 @@
 							/>
 							<p>
 								A work management platform that helps business teams plan
-								projects, organize tasks | Clone of website Wrike | An
-								individual project, executed in 5 days.
+								projects | Clone of website Wrike | An individual project,
+								executed in 5 days.
 								<br /><b>Tech-stack :</b> HTML, CSS, JavaScript
 							</p>
 
 							<a
+								class="project-deployed-link"
 								href="https://heartfelt-belekoy-7286f4.netlify.app/"
 								target="_blank"
 								id="p-cards"
@@ -323,12 +328,10 @@
 							<a
 								href="https://github.com/sahu-neha/gleaming-cracker-3413"
 								target="_blank"
-								class="delayExtraBigReveal"
+								class="project-github-link"
 								>&nbsp; GitHub</a
 							>
 						</article>
-					</div>
-					<div id="section-projects">
 						<article class="p-cards">
 							<h3 class="project-title">Digital Bazaar</h3>
 							<br />
@@ -357,7 +360,7 @@
 							<a
 								href="https://github.com/sahu-neha/material-sleep-1381"
 								target="_blank"
-								class="delayExtraBigReveal"
+								class="project-github-link"
 							>
 								&nbsp; GitHub</a
 							>
@@ -371,12 +374,13 @@
 							/>
 							<p>
 								A work management platform that helps business teams plan
-								projects, organize tasks | Clone of website Wrike | An
-								individual project, executed in 5 days.
+								projects | Clone of website Wrike | An individual project,
+								executed in 5 days.
 								<br /><b>Tech-stack :</b> HTML, CSS, JavaScript
 							</p>
 
 							<a
+								class="project-deployed-link"
 								href="https://heartfelt-belekoy-7286f4.netlify.app/"
 								target="_blank"
 								id="p-cards"
@@ -385,7 +389,68 @@
 							<a
 								href="https://github.com/sahu-neha/gleaming-cracker-3413"
 								target="_blank"
-								class="delayExtraBigReveal"
+								class="project-github-link"
+								>&nbsp; GitHub</a
+							>
+						</article>
+						<article class="p-cards">
+							<h3 class="project-title">Digital Bazaar</h3>
+							<br />
+							<img
+								src="images/digitalbazaar.jpg"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+
+							<p class="project-description">
+								An e-commerce store for grocery and all daily needs | Clone of
+								website JioMart | A collaborative project built by a team of 4,
+								executed in 5 days.
+								<br />
+								<b class="project-tech-stack">Tech-stack :</b> HTML, CSS,
+								JavaScript
+							</p>
+
+							<a
+								class="project-deployed-link"
+								href="https://digital-bazaar.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/material-sleep-1381"
+								target="_blank"
+								class="project-github-link"
+							>
+								&nbsp; GitHub</a
+							>
+						</article>
+						<article class="p-cards">
+							<h3>ManageGeeks</h3>
+							<br /><img
+								src="images/managegeeks.png"
+								alt=""
+								style="margin: 5px 0px"
+							/>
+							<p>
+								A work management platform that helps business teams plan
+								projects | Clone of website Wrike | An individual project,
+								executed in 5 days.
+								<br /><b>Tech-stack :</b> HTML, CSS, JavaScript
+							</p>
+
+							<a
+								class="project-deployed-link"
+								href="https://heartfelt-belekoy-7286f4.netlify.app/"
+								target="_blank"
+								id="p-cards"
+								>Visualize Project &nbsp;|
+							</a>
+							<a
+								href="https://github.com/sahu-neha/gleaming-cracker-3413"
+								target="_blank"
+								class="project-github-link"
 								>&nbsp; GitHub</a
 							>
 						</article>
@@ -397,28 +462,32 @@
 				<div class="grid-layout" id="git-stats">
 					<h2>GitHub Contribution <span>.</span></h2>
 					<div id="section-github">
-						<div id="github-streak-stats">
+						<div>
 							<img
+								id="github-streak-stats"
 								src="https://github-readme-stats.vercel.app/api?username=sahu-neha&theme=highcontrast&show_icons=true&count_private=true&hide_border=true"
 								alt="sahu-neha github-streak-stats"
 							/>
 						</div>
-						<div id="github-stats-card">
+						<div>
 							<img
+								id="github-stats-card"
 								src="https://github-readme-streak-stats.herokuapp.com/?user=sahu-neha&theme=highcontrast&hide_border=true"
 								alt="sahu-neha github-readme-stats"
 							/>
 						</div>
-						<div id="github-top-langs">
+						<div>
 							<img
+								id="github-top-langs"
 								src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahu-neha&theme=highcontrast&hide_border=true&layout=compact&langs_count=6&layout=compact"
 								alt="sahu-neha github-readme-lang-stats"
 							/>
 						</div>
 					</div>
 					<div id="section-github">
-						<div id="react-activity-calendar">
+						<div>
 							<img
+								class="react-activity-calendar"
 								src="https://ghchart.rshah.org/sahu-neha"
 								alt="sahu-neha github-streak-stats"
 							/>
@@ -427,11 +496,13 @@
 				</div>
 			</section>
 
-			<section id="about">
-				<div id="contact" class="grid-layout">
+			<section id="contact">
+				<div class="grid-layout">
 					<h2 style="text-align: center">Contact <span>.</span></h2>
 					<div>
-						<div id="contact-photo"></div>
+						<div id="contact-photo">
+							<img src="images/contact-gif.gif" alt="" />
+						</div>
 						<div>
 							<h3>Feel free to contact me for any work or suggestions.</h3>
 							<h3 style="color: teal"><b>Neha Sahu</b></h3>
@@ -443,7 +514,8 @@
 									></span
 								>
 							</h3>
-							<h3 id="contact-phone">+91-6260299169</h3>
+							<h3 id="contact-phone">☏ +91-6260299169</h3>
+							<!-- <span style="display: inline-block; font-size: 1.8rem; color: #008080; background: #090909;">☏</span>  -->
 							<nav>
 								<ul>
 									<a
@@ -455,7 +527,7 @@
 									></a>
 
 									<a
-										id="contact-github"
+										id="contact-discord"
 										href="https://discord.com/users/589433155635773470"
 										target="_blank"
 										><li>
