@@ -239,7 +239,7 @@ header .grid-layout nav .nav-list li a:hover {
     display: flex;
     align-items: center;
     min-height: 90vh;
-    padding: 150px 0px;
+    padding: 200px 0px 100px 0px;
     overflow: hidden;
     width: 100%;
 }
@@ -247,10 +247,6 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 992px) {
     #home .grid-layout {
         padding: 0px;
-    }
-    #home-bg-photo {
-        /* display: none; */
-        width: 50vh;
     }
 }
 
@@ -367,7 +363,6 @@ header .grid-layout nav .nav-list li a:hover {
 
 #about .grid-layout>div .home-img-div {
     width: 47%;
-    /* background-image: url("assets/image/profile-photo-neha-sahu.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -671,35 +666,19 @@ header .grid-layout nav .nav-list li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* flex-wrap: wrap; */
-    text-align: left;
+    text-align: center;
 }
-
-#github .grid-layout #section-github>article {
-    background-color: #09090b;
-    height: auto;
-    padding: 32px;
-    margin: 8px;
-    flex-basis: calc(33% - 20px);
-    flex-grow: 1;
-    border: 1px solid #040405;
-    transition: 1s all ease;
-    height: auto;
-
-}
-
 
 @media screen and (max-width: 1200px) {
     #github .grid-layout #section-github {
-        flex-basis: calc(50% - 20px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: left;
     }
 }
 
-@media screen and (max-width: 768px) {
-    #github .grid-layout #section-github>article {
-        flex-basis: calc(100% - 20px);
-    }
-}
 
 /* sub-skills */
 
@@ -952,12 +931,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    #contact .grid-layout>div .home-img-div {
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
     #contact .grid-layout>div .home-img-div {
         width: auto;
     }
