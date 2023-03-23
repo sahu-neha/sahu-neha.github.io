@@ -248,6 +248,10 @@ header .grid-layout nav .nav-list li a:hover {
     #home .grid-layout {
         padding: 0px;
     }
+    #home-bg-photo {
+        /* display: none; */
+        width: 50vh;
+    }
 }
 
 #home .grid-layout #home-container-text {
