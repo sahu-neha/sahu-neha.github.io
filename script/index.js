@@ -9,6 +9,8 @@ function typeWrite(e) {
 }
 typeWrite(document.querySelector(".typewriter"));
 
+// ---------------------------------//
+
 // var typed = new typed(".typewriter", {
 // 	strings: ["JAVA BACKEND DEVELOPER"],
 // 	typeSpeed: 75,
