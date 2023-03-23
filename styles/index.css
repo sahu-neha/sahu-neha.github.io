@@ -361,7 +361,7 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 
-#about .grid-layout>div .home-img {
+#about .grid-layout>div .home-img-div {
     width: 47%;
     /* background-image: url("assets/image/profile-photo-neha-sahu.jpg"); */
     background-repeat: no-repeat;
@@ -371,7 +371,7 @@ header .grid-layout nav .nav-list li a:hover {
     height: 500px;
 }
 
-#about .grid-layout>div .home-img>img {
+#about .grid-layout>div .home-img-div>img {
     padding: 90px;
     width: 100%;
     height: 100%;
@@ -381,27 +381,27 @@ header .grid-layout nav .nav-list li a:hover {
 
 
 @media screen and (max-width: 1200px) {
-    #about .grid-layout>div .home-img {
+    #about .grid-layout>div .home-img-div {
         width: auto;
     }
 
 }
 
 @media screen and (max-width: 992px) {
-    #about .grid-layout>div .home-img {
+    #about .grid-layout>div .home-img-div {
         height: 350px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    #about .grid-layout>div .home-img {
+    #about .grid-layout>div .home-img-div {
         height: 300px;
     }
 
 }
 
-#about .grid-layout>div .home-img h3 {
+#about .grid-layout>div .home-img-div h3 {
     color: #040405;
     background-color: #fff;
     padding: 8px;
@@ -948,13 +948,13 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    #contact .grid-layout>div .home-img {
+    #contact .grid-layout>div .home-img-div {
         width: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #contact .grid-layout>div .home-img {
+    #contact .grid-layout>div .home-img-div {
         width: auto;
     }
 }
