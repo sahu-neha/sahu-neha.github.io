@@ -469,9 +469,10 @@ header .grid-layout nav .nav-list li a:hover {
 
 #about .grid-layout>div div:nth-child(2) nav ul a {
     background-color: #040405;
-    border: 2px solid #101013;
-    border-radius: 6px;
+    border: 1px solid #101013;
+    border-radius: 4px;
     padding: 16px;
+    transition: 1s all ease;
 }
 
 @media screen and (max-width: 1200px) {
@@ -539,6 +540,7 @@ header .grid-layout nav .nav-list li a:hover {
     border: 1px solid #040405;
     transition: 1s all ease;
     height: auto;
+    border-radius: 4px;
 }
 
 #projects .grid-layout #section-projects>article>img {
@@ -551,10 +553,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #projects .grid-layout #section-projects>article:hover {
     border: 1px solid teal;
-}
-
-#projects .grid-layout #section-projects #git-stats:hover {
-    border: 1px solid #000;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -664,9 +663,21 @@ header .grid-layout nav .nav-list li a:hover {
 #github #git-stats #section-github {
     margin: 24px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+#section-github>div {
+    transition: 1s all ease;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#section-github>div:hover {
+    /* transform: scale(1.05); */
+    cursor: pointer;
+    border-color: teal;
 }
 
 @media screen and (max-width: 1200px) {
@@ -885,7 +896,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 
 #contact {
-    padding: 72px 0px 96px 0px;
+    padding: 72px 0px 72px 0px;
     background-color: #040405;
 }
 
@@ -895,11 +906,18 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 
+
 #contact .grid-layout>div {
     background-color: #09090b;
     border: 2px solid #101013;
-    padding: 24px;
+    /* padding: 12px; */
     border-radius: 4px;
+}
+
+
+#contact .grid-layout>div>div {
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -907,16 +925,15 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>div {
+    #contact .grid-layout>div>div {
         flex-wrap: wrap;
         gap: 32px;
     }
 }
 
 
-#contact .grid-layout>div #contact-photo {
-    width: 47%;
-    /* background-image: url("https://i.pinimg.com/originals/e8/72/ca/e872cad228d790ba8fb63bb40056a208.gif"); */
+#contact .grid-layout>div>div #contact-photo {
+    width: 42%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -925,29 +942,29 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>div #contact-photo {
+    #contact .grid-layout>div>div #contact-photo {
         width: auto;
     }
 }
 
 @media screen and (max-width: 992px) {
-    #contact .grid-layout>div .home-img-div {
+    #contact .grid-layout>div>div .home-img-div {
         width: auto;
     }
 }
 
 
-#contact .grid-layout>div div:nth-child(2) {
+#contact .grid-layout>div>div div:nth-child(2) {
     width: 49%;
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>div div:nth-child(2) {
+    #contact .grid-layout>div>div div:nth-child(2) {
         width: 100%;
     }
 }
 
-#contact .grid-layout>div div:nth-child(2) h2 {
+#contact .grid-layout>div>div div:nth-child(2) h2 {
     font-size: 4rem;
     font-weight: 500;
     margin: 16px 0px;
@@ -955,57 +972,58 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    #contact .grid-layout>div div:nth-child(2) h2 {
+    #contact .grid-layout>div>div div:nth-child(2) h2 {
         font-size: 3.2rem;
     }
 }
 
-#contact .grid-layout>div div:nth-child(2) h3 {
+#contact .grid-layout>div>div div:nth-child(2) h3 {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 16px;
     color: #fff;
 }
 
-#contact .grid-layout>div div:nth-child(2) h4 {
+#contact .grid-layout>div>div div:nth-child(2) h4 {
     font-size: 3.2rem;
     font-weight: 500;
     color: teal;
 }
 
-#contact .grid-layout>div div:nth-child(2) p {
+#contact .grid-layout>div>div div:nth-child(2) p {
     font-size: 1.8rem;
     color: #d8d8d8;
     line-height: 160%;
     margin: 32px 0px 48px 0px;
 }
 
-#contact .grid-layout>div div:nth-child(2) nav ul {
+#contact .grid-layout>div>div div:nth-child(2) nav ul {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>div div:nth-child(2) nav ul {
+    #contact .grid-layout>div>div div:nth-child(2) nav ul {
         flex-wrap: wrap;
     }
 }
 
-#contact .grid-layout>div div:nth-child(2) nav ul a {
+#contact .grid-layout>div>div div:nth-child(2) nav ul a {
     background-color: #040405;
-    border: 2px solid #101013;
-    border-radius: 6px;
+    border: 1px solid #101013;
+    border-radius: 4px;
     padding: 16px;
+    transition: 1s all ease;
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>div div:nth-child(2) nav ul a img {
+    #contact .grid-layout>div>div div:nth-child(2) nav ul a img {
         width: 40px;
     }
 }
 
-#contact .grid-layout>div div:nth-child(2) nav ul a:hover {
+#contact .grid-layout>div>div div:nth-child(2) nav ul a:hover {
     border-color: teal;
 }
 

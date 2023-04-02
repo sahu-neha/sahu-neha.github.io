@@ -7,10 +7,14 @@
 		<meta name="Portfolio" content="Neha Sahu" />
 
 		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/github.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+		<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
 		<title>Portfolio - Neha Sahu</title>
 	</head>
@@ -66,7 +70,7 @@
 							Hello, I'm <br />
 							<span id="user-detail-name">Neha Sahu</span>
 						</h1>
-						<p class="typewriter">JAVA BACKEND DEVELOPER</p>
+						<p><span class="typewriter"></span></p>
 						<a
 							id="resume-button-2"
 							target="_blank"
@@ -474,30 +478,31 @@
 						<div>
 							<img
 								id="github-streak-stats"
-								src="https://github-readme-streak-stats.herokuapp.com/?user=sahu-neha&ring=c1cb12&currStreakLabel=c1cb12&fire=c1cb12&theme=highcontrast&hide_border=true&stroke=e0eff8"
+								src="https://github-readme-streak-stats.herokuapp.com/?user=sahu-neha&theme=gotham&hide_border=true&stroke=e0eff8"
 							/>
+
+							<!-- https://github-readme-streak-stats.herokuapp.com/?user=sahu-neha&ring=c1cb12&currStreakLabel=c1cb12&fire=c1cb12&theme=highcontrast&hide_border=true&stroke=e0eff8 -->
 						</div>
-						<div>
-							<img
-								id="github-stats-card"
-								src="https://github-readme-stats.vercel.app/api?username=sahu-neha&ring=teal&fire=teal&theme=highcontrast&hide_border=true"
-								alt="sahu-neha github-readme-stats"
-							/>
-						</div>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 						<div>
 							<img
 								id="github-top-langs"
-								src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahu-neha&theme=highcontrast&hide_border=true&layout=compact&langs_count=6&layout=compact"
+								src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahu-neha&theme=gotham&hide_border=true&layout=compact&langs_count=6&layout=compact"
 								alt="sahu-neha github-readme-lang-stats"
 							/>
 						</div>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<div>
+							<img
+								id="github-stats-card"
+								src="https://github-readme-stats.vercel.app/api?username=sahu-neha&ring=teal&fire=teal&theme=gotham&hide_border=true"
+								alt="sahu-neha github-readme-stats"
+							/>
+						</div>
 					</div>
-					<div id="section-github">
-						<img
-							class="react-activity-calendar"
-							src="https://ghchart.rshah.org/sahu-neha"
-							alt="sahu-neha github-streak-stats"
-						/>
+					<div class="react-activity-calendar calendar">
+						<!-- Loading stuff -->
+						Loading the data just for you.
 					</div>
 				</div>
 			</section>
@@ -506,49 +511,51 @@
 				<div class="grid-layout">
 					<h2 style="text-align: center">Contact <span>.</span></h2>
 					<div>
-						<div id="contact-photo">
-							<img src="images/contact-gif.gif" alt="" />
-						</div>
 						<div>
-							<h3>Feel free to contact me for any work or suggestions.</h3>
-							<h3 style="color: teal"><b>Neha Sahu</b></h3>
-							<h3 id="contact-email">
-								📧
-								<span>
-									<a style="color: #fff" href="mailto:nehasahu2227@gmail.com">
-										nehasahu2227@gmail.com</a
-									></span
-								>
-							</h3>
-							<h3 id="contact-phone">☏ +91-6260299169</h3>
-							<!-- <span style="display: inline-block; font-size: 1.8rem; color: #008080; background: #090909;">☏</span>  -->
-							<nav>
-								<ul>
-									<a
-										id="contact-linkedin"
-										href="https://www.linkedin.com/in/sahu-neha/"
-										target="_blank"
-										><li>
-											<img src="./images/linkedin.svg" alt="LinkedIn" /></li
-									></a>
+							<div id="contact-photo">
+								<img src="images/contact1-gif.gif" alt="" />
+							</div>
+							<div>
+								<h3>Feel free to contact me for any work or suggestions.</h3>
+								<h3 id="teal" style="color: teal"><b>Neha Sahu .</b></h3>
+								<h3 id="contact-email">
+									📧
+									<span>
+										<a style="color: #fff" href="mailto:nehasahu2227@gmail.com">
+											nehasahu2227@gmail.com</a
+										></span
+									>
+								</h3>
+								<h3 id="contact-phone">☏ +91-6260299169</h3>
+								<!-- <span style="display: inline-block; font-size: 1.8rem; color: #008080; background: #090909;">☏</span>  -->
+								<nav>
+									<ul>
+										<a
+											id="contact-linkedin"
+											href="https://www.linkedin.com/in/sahu-neha/"
+											target="_blank"
+											><li>
+												<img src="./images/linkedin.svg" alt="LinkedIn" /></li
+										></a>
 
-									<a
-										id="contact-discord"
-										href="https://discord.com/users/589433155635773470"
-										target="_blank"
-										><li>
-											<img src="./images/discord.svg" alt="Discord" /></li
-									></a>
+										<a
+											id="contact-discord"
+											href="https://discord.com/users/589433155635773470"
+											target="_blank"
+											><li>
+												<img src="./images/discord.svg" alt="Discord" /></li
+										></a>
 
-									<a
-										id="contact-github"
-										href="https://github.com/sahu-neha"
-										target="_blank"
-										><li>
-											<img src="./images/github.svg" alt="GitHub" /></li
-									></a>
-								</ul>
-							</nav>
+										<a
+											id="contact-github"
+											href="https://github.com/sahu-neha"
+											target="_blank"
+											><li>
+												<img src="./images/github.svg" alt="GitHub" /></li
+										></a>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -558,6 +565,24 @@
 				<p>Thank you for visiting !</p>
 			</footer>
 		</main>
+		<!-- ==================== TYPE - WRITER ==================== -->
+		<script>
+			var typed = new Typed(".typewriter", {
+				strings: ["JAVA BACKEND DEVELOPER"],
+				typeSpeed: 50,
+				backSpeed: 50,
+				loop: true,
+			});
+		</script>
+		<!-- ==================== GITHUB CALENDER ==================== -->
+		<script>
+			// or enable responsive functionality
+			GitHubCalendar(".calendar", "sahu-neha", {
+				responsive: true,
+				global_stats: true,
+				tooltips: true,
+			});
+		</script>
 	</body>
 </html>
 <script src="script/index.js"></script>
