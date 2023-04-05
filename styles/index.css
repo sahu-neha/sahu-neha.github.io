@@ -119,6 +119,11 @@ header .grid-layout nav .nav-list li {
     }
 }
 
+header .grid-layout nav .nav-list li button{
+    background: none;
+    border: none;
+}
+
 header .grid-layout nav .nav-list li a {
     color: #d8d8d8;
     position: relative;

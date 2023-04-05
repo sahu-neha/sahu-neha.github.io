@@ -26,7 +26,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     fill: var(--color-calendar-graph-day-L4-bg);
 }
 
-*{
+* {
     color: white;
 }
 
@@ -209,4 +209,21 @@ h2.f4.text-normal.mb-3 {
 text.ContributionCalendar-label {
     fill: #ccc;
     font-size: 9px;
+}
+
+@media screen and (max-width: 1024px) {
+    .calendar {
+        width: 95%;
+        min-height: 150px;
+        padding: 10px;
+    }
+
+    .text-small,
+    .text-muted {
+        font-size: 10px;
+    }
+
+    .contrib-number {
+        font-size: 14px;
+    }
 }
