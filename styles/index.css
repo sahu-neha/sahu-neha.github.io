@@ -253,7 +253,6 @@ header .grid-layout nav .nav-list li a:hover {
 #home .grid-layout #home-container-text {
     width: 50%;
     flex-direction: column;
-    /* background-image: url(""); */
 }
 
 @media screen and (max-width: 992px) {
@@ -296,7 +295,7 @@ header .grid-layout nav .nav-list li a:hover {
     line-height: 160%;
 }
 
-#home .grid-layout #home-container-text a {
+#home .grid-layout #home-container-text button {
     background: teal;
     color: #fff;
     backdrop-filter: blur(10px);
@@ -312,7 +311,7 @@ header .grid-layout nav .nav-list li a:hover {
     font-weight: 400;
 }
 
-#home .grid-layout #home-container-text a:hover {
+#home .grid-layout #home-container-text button:hover {
     background: rgb(0, 81, 81);
 }
 
