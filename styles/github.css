@@ -220,10 +220,19 @@ text.ContributionCalendar-label {
 
     .text-small,
     .text-muted {
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .contrib-number {
         font-size: 14px;
+    }
+
+    .float-right {
+        font-size: 8px;
+    }
+
+    .d-inline-block {
+        width: 5px;
+        height: 5px;
     }
 }
