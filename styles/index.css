@@ -119,7 +119,7 @@ header .grid-layout nav .nav-list li {
     }
 }
 
-header .grid-layout nav .nav-list li button{
+header .grid-layout nav .nav-list li button {
     background: none;
     border: none;
 }
@@ -343,7 +343,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 1200px) {
     #about {
-        padding: 72px 20px;
+        padding: 0px 20px;
     }
 }
 
