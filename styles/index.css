@@ -385,7 +385,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 1200px) {
     #about .grid-layout>div .home-img-div {
-        width: auto;
+        width: 60%;
     }
 
     #about .grid-layout>div .home-img-div>img {
@@ -512,6 +512,10 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 
+#projects .grid-layout {
+    padding-top: 40px;
+}
+
 #projects .grid-layout h2,
 #about .grid-layout h2 {
     padding-bottom: 24px;
@@ -572,6 +576,10 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 1200px) {
     #projects .grid-layout #section-projects>article {
         flex-basis: calc(50% - 20px);
+    }
+
+    #projects .grid-layout {
+        padding-top: 65px;
     }
 }
 
@@ -819,6 +827,7 @@ header .grid-layout nav .nav-list li a:hover {
     #skills .grid-layout div,
     #skills .grid-layout article {
         width: 100%;
+        padding-top: 60px;
     }
 }
 
@@ -920,6 +929,17 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 
+#contact .grid-layout>h2{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    #contact .grid-layout>h2{
+        padding-top: 65px;
+    }
+}
+
+
 #contact .grid-layout>div {
     background-color: #09090b;
     border: 2px solid #101013;
@@ -941,6 +961,9 @@ header .grid-layout nav .nav-list li a:hover {
     #contact .grid-layout>div>div {
         flex-wrap: wrap;
         gap: 32px;
+    }
+    #contact .grid-layout>div{
+        padding-bottom: 32px;
     }
 }
 
