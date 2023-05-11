@@ -691,7 +691,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #section-github>div {
     transition: 1s all ease;
-    border: 1px solid black;
+    border: 1px solid #000;
     border-radius: 4px;
 }
 
@@ -701,13 +701,28 @@ header .grid-layout nav .nav-list li a:hover {
     border-color: teal;
 }
 
+#section-github #github-top-langs {
+    padding: 24px 10px;
+    background: #0c1014;
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 1200px) {
     #github .grid-layout #section-github {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-        text-align: left;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #github #git-stats #section-github {
+        background: none;
+    }
+
+    #section-github #github-top-langs {
+        padding: 24px 40px;
     }
 }
 
@@ -929,12 +944,12 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 
-#contact .grid-layout>h2{
+#contact .grid-layout>h2 {
     padding-top: 30px;
 }
 
 @media screen and (max-width: 1200px) {
-    #contact .grid-layout>h2{
+    #contact .grid-layout>h2 {
         padding-top: 65px;
     }
 }
@@ -962,7 +977,8 @@ header .grid-layout nav .nav-list li a:hover {
         flex-wrap: wrap;
         gap: 32px;
     }
-    #contact .grid-layout>div{
+
+    #contact .grid-layout>div {
         padding-bottom: 32px;
     }
 }
