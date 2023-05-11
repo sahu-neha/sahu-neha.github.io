@@ -371,7 +371,7 @@ header .grid-layout nav .nav-list li a:hover {
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 500px;
+    height: auto;
 }
 
 #about .grid-layout>div .home-img-div>img {
@@ -385,7 +385,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 1200px) {
     #about .grid-layout>div .home-img-div {
-        width: 60%;
+        width: 50%;
     }
 
     #about .grid-layout>div .home-img-div>img {
@@ -395,21 +395,23 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 992px) {
     #about .grid-layout>div .home-img-div {
-        height: auto;
+        /* height: auto; */
+        width: 55%;
     }
 
     #about .grid-layout>div .home-img-div>img {
-        padding: 90px;
+        padding: 80px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     #about .grid-layout>div .home-img-div {
-        height: auto;
+        /* height: auto; */
+        width: 75%;
     }
 
     #about .grid-layout>div .home-img-div>img {
-        padding: 70px;
+        padding: 65px;
     }
 }
 
