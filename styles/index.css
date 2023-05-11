@@ -909,7 +909,8 @@ header .grid-layout nav .nav-list li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     justify-content: center;
     width: 20%;
     flex-grow: 1;
@@ -925,9 +926,23 @@ header .grid-layout nav .nav-list li a:hover {
     border: 1px solid teal;
 }
 
+@media screen and (max-width: 1200px) {
+    #skills .grid-layout #skills-cards article {
+        width: 30%;
+    }
+
+    #skills .grid-layout #skills-cards article img {
+        margin-top: -45px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #skills .grid-layout #skills-cards article {
         width: 40%;
+    }
+
+    #skills .grid-layout #skills-cards article img {
+        margin-top: -50px;
     }
 }
 
