@@ -382,6 +382,34 @@ header .grid-layout nav .nav-list li a:hover {
     border-radius: 50%;
 }
 
+/* ============ */
+
+#about .grid-layout h2 {
+    position: relative;
+}
+
+#about .grid-layout h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: teal;
+    position: absolute;
+    top: 65%;
+    left: 50;
+}
+
+#about .grid-layout h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: teal;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    margin-top: 5px;
+}
+
+/* ============ */
 
 @media screen and (max-width: 1200px) {
     #about .grid-layout>div .home-img-div {
@@ -533,14 +561,14 @@ header .grid-layout nav .nav-list li a:hover {
 
 /* ============ */
 
-/* #projects .grid-layout h2 {
+#projects .grid-layout h2 {
     position: relative;
 }
 
 #projects .grid-layout h2::before {
     content: '';
     height: 4px;
-    width: 50px;
+    width: 56px;
     background-color: teal;
     position: absolute;
     top: 65%;
@@ -550,14 +578,14 @@ header .grid-layout nav .nav-list li a:hover {
 #projects .grid-layout h2::after {
     content: '';
     height: 4px;
-    width: 25px;
+    width: 27px;
     background-color: teal;
     position: absolute;
     top: 75%;
     left: 50;
     margin-top: 5px;
-    margin-left: -169.8px;
-} */
+    margin-left: -149.5px;
+}
 
 /* ============ */
 
@@ -711,6 +739,36 @@ header .grid-layout nav .nav-list li a:hover {
 #github .grid-layout h2 span {
     color: teal;
 }
+
+/* ============ */
+
+#github .grid-layout h2 {
+    position: relative;
+}
+
+#github .grid-layout h2::before {
+    content: '';
+    height: 4px;
+    width: 110px;
+    background-color: teal;
+    position: absolute;
+    top: 65%;
+    left: 50;
+}
+
+#github .grid-layout h2::after {
+    content: '';
+    height: 4px;
+    width: 55px;
+    background-color: teal;
+    position: absolute;
+    top: 75%;
+    left: 50;
+    margin-top: 5px;
+    margin-left: -362px;
+}
+
+/* ============ */
 
 
 #github #git-stats #section-github {
@@ -904,6 +962,35 @@ header .grid-layout nav .nav-list li a:hover {
     transition: 2s all ease;
 }
 
+/* ============ */
+
+#skills .grid-layout #skills-text h2 {
+    position: relative;
+}
+
+#skills .grid-layout #skills-text h2::before {
+    content: '';
+    height: 4px;
+    width: 90px;
+    background-color: teal;
+    position: absolute;
+    top: 100%;
+    left: 50;
+}
+
+#skills .grid-layout #skills-text h2::after {
+    content: '';
+    height: 4px;
+    width: 45px;
+    background-color: teal;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+/* ============ */
+
 @media screen and (max-width: 768px) {
     #skills .grid-layout #skills-text .changeDescription {
         display: none;
@@ -995,10 +1082,56 @@ header .grid-layout nav .nav-list li a:hover {
     padding-top: 30px;
 }
 
+/* ============ */
+
+#contact .grid-layout h2 {
+    position: relative;
+}
+
+#contact .grid-layout h2::before {
+    content: '';
+    height: 4px;
+    width: 70px;
+    background-color: teal;
+    position: absolute;
+    top: 76%;
+    left: 50;
+}
+
+#contact .grid-layout h2::after {
+    content: '';
+    height: 4px;
+    width: 35px;
+    background-color: teal;
+    position: absolute;
+    top: 76%;
+    left: 50;
+    margin-top: 11px;
+    margin-left: -143px;
+}
+
+/* ============ */
+
 @media screen and (max-width: 1200px) {
     #contact .grid-layout>h2 {
         padding-top: 65px;
     }
+
+    /* ============ */
+
+    #contact .grid-layout h2 {
+        position: relative;
+    }
+
+    #contact .grid-layout h2::before {
+        top: 81%;
+    }
+
+    #contact .grid-layout h2::after {
+        top: 81%;
+    }
+
+    /* ============ */
 }
 
 
