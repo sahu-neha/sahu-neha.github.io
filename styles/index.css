@@ -439,7 +439,18 @@ header .grid-layout nav .nav-list li a:hover {
     }
 
     #about .grid-layout>div .home-img-div>img {
-        padding: 65px;
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about .grid-layout>div .home-img-div {
+        /* height: auto; */
+        width: 85%;
+    }
+
+    #about .grid-layout>div .home-img-div>img {
+        padding: 55px;
     }
 }
 
@@ -812,13 +823,30 @@ header .grid-layout nav .nav-list li a:hover {
     }
 
     #section-github #github-top-langs {
-        padding: 24px 40px;
+        padding: 12px 40px;
     }
 }
 
+/* ================== */
+
+@media screen and (max-width: 400px) {
+
+    #github .grid-layout h2::before {
+        top: 82%;
+        left: 50;
+    }
+
+    #github .grid-layout h2::after {
+        top: 92%;
+        left: 50;
+        margin-top: 5px;
+    }
+
+}
+
+/* ================== */
 
 /* sub-skills */
-
 
 #sub-skills {
     padding: 10px 48px 96px 48px;
