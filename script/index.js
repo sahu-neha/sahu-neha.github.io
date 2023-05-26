@@ -1,18 +1,3 @@
-// function typeWrite(e) {
-// 	var textoArray = e.innerHTML.split("");
-// 	e.innerHTML = " ";
-// 	textoArray.forEach(function (letter, i) {
-// 		setTimeout(function () {
-// 			e.innerHTML += letter;
-// 		}, 75 * i);
-// 	});
-// }
-// typeWrite(document.querySelector(".typewriter"));
-
-// ---------------------------------//
-
-//----------------------------------//
-
 function menu() {
 	class MobileNavbar {
 		constructor(mobileMenu, navList, navLinks, navLinks2) {
@@ -29,9 +14,8 @@ function menu() {
 			this.navLinks.forEach((link, index) => {
 				link.style.animation
 					? (link.style.animation = "")
-					: (link.style.animation = `navLinkFade 0.5s ease forwards ${
-							index / 7 + 0.3
-					  }s`);
+					: (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
+						}s`);
 			});
 		}
 
@@ -63,20 +47,3 @@ function menu() {
 	mobileNavbar.init();
 }
 menu();
-
-// ==================== DISABLE RIGHT CLICK ==================== //
-
-var message = "Something went wrong";
-function rtclickcheck(keyp) {
-	if (navigator.appName == "Netscape" && keyp.which == 3) {
-		alert(message);
-		return false;
-	}
-	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
-		alert(message);
-		return false;
-	}
-}
-document.onmousedown = rtclickcheck;
-
-//----------------------------------//
