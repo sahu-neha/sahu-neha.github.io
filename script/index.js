@@ -14,8 +14,9 @@ function menu() {
 			this.navLinks.forEach((link, index) => {
 				link.style.animation
 					? (link.style.animation = "")
-					: (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
-						}s`);
+					: (link.style.animation = `navLinkFade 0.5s ease forwards ${
+							index / 7 + 0.3
+					  }s`);
 			});
 		}
 
@@ -47,3 +48,20 @@ function menu() {
 	mobileNavbar.init();
 }
 menu();
+
+// ==================== DISABLE RIGHT CLICK ==================== //
+
+var message = "Something went wrong";
+function rtclickcheck(keyp) {
+	if (navigator.appName == "Netscape" && keyp.which == 3) {
+		alert(message);
+		return false;
+	}
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
+		alert(message);
+		return false;
+	}
+}
+document.onmousedown = rtclickcheck;
+
+//----------------------------------//
